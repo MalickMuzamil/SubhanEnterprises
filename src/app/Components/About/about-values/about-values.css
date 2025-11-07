@@ -1,0 +1,27 @@
+.values {
+  position: relative;
+  background: radial-gradient(circle at top, #0d0d0d, #1a1a1a 80%);
+  padding: clamp(4rem, 6vw, 6rem) 0;
+  color: #fff;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(229, 9, 20, 0.25), transparent 70%);
+    filter: blur(120px);
+    z-index: 0;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+  }
+}

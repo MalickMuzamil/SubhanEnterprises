@@ -1,0 +1,40 @@
+.dealer {
+  background: var(--secondary-color) 100%;
+  padding: 6rem 0;
+
+  h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    letter-spacing: 1px;
+  }
+
+  .feature-box {
+    background-color: var(--dark-color);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: var(--text-color);
+
+    &:hover {
+      transform: translateY(-8px);
+      border-color: var(--primary-color);
+      box-shadow: 0 0 25px rgba(229, 9, 20, 0.3);
+    }
+
+    .icon {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      color: var(--primary-color);
+    }
+
+    h5 {
+      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      color: var(--light-color);
+    }
+
+    p {
+      font-size: clamp(0.9rem, 1.5vw, 1rem);
+      color: var(--muted-color);
+      margin-bottom: 0;
+    }
+  }
+}

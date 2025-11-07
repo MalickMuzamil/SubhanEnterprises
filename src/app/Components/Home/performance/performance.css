@@ -1,0 +1,9 @@
+.performance {
+  background: linear-gradient(to bottom, var(--secondary-color), var(--dark-color));
+  padding: 6rem 0;
+
+  h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+  }
+
+}

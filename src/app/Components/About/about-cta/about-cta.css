@@ -1,0 +1,109 @@
+.about-cta {
+  position: relative;
+  background: radial-gradient(circle at 40% 60%, #111 0%, #0b0b0b 90%);
+  padding: 6rem 0;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 700px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(
+      circle at center,
+      rgba(229, 9, 20, 0.35),
+      transparent 70%
+    );
+    filter: blur(120px);
+    z-index: 0;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 800;
+    letter-spacing: 1px;
+    z-index: 2;
+    position: relative;
+  }
+
+  p {
+    color: #ccc;
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
+    margin-bottom: 2rem;
+    z-index: 2;
+    position: relative;
+    animation: fadeUp 1.5s ease forwards;
+  }
+
+  .cta-buttons {
+    position: relative;
+    z-index: 2;
+
+    .btn {
+      font-weight: 600;
+      border-radius: 6px;
+      padding: 0.8rem 1.8rem;
+      letter-spacing: 0.5px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+
+      &.btn-primary {
+        background: linear-gradient(90deg, #e50914, #ff3333);
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        &:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 0 30px rgba(229, 9, 20, 0.6);
+        }
+      }
+
+      &.btn-outline-light {
+        border: 2px solid #fff;
+        color: #fff;
+        text-transform: uppercase;
+        background: transparent;
+        &:hover {
+          background: #fff;
+          color: #000;
+          transform: translateY(-4px);
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+  }
+
+  @keyframes glowText {
+    from {
+      text-shadow: 0 0 15px rgba(229, 9, 20, 0.3);
+    }
+    to {
+      text-shadow: 0 0 30px rgba(229, 9, 20, 0.9);
+    }
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 4rem 0;
+    h2 {
+      font-size: 1.8rem;
+    }
+    .btn {
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.features {
+  /* background-color: var(--secondary-color); */
+  background: linear-gradient(
+    to top,
+    var(--dark-color) 0%,
+    var(--secondary-color) 100%
+  );
+  padding: 6rem 0;
+
+  h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    letter-spacing: 1px;
+  }
+}

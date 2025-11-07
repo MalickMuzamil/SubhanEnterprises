@@ -1,0 +1,52 @@
+.product-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 60px;
+  padding: 0.3rem;
+  width: fit-content;
+  margin: 0 auto;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.08);
+  gap: 0.3rem;
+  transition: all 0.3s ease;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+  @media (max-width: 768px) {
+    .product-switch {
+      justify-content: flex-start;
+      width: 100%;
+    }
+  }
+
+
+.switch-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #cfcfcf;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.6rem 1.6rem; /* 🔥 compact button size */
+  border-radius: 50px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.35s ease;
+
+  &:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  &.active {
+    color: #fff;
+    background: linear-gradient(90deg, #e50914, #ff3131);
+    box-shadow: 0 0 25px rgba(229, 9, 20, 0.5);
+    transform: scale(1.02);
+  }
+}

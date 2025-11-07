@@ -1,0 +1,19 @@
+.home-page {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  overflow-x: hidden;
+
+  #hero-section,
+  #features-section,
+  #products-section,
+  #performance-section,
+  gallery-section,
+  #testimonials-section {
+    scroll-margin-top: 80px;
+  }
+
+  section {
+    width: 100%;
+    display: block;
+  }
+}

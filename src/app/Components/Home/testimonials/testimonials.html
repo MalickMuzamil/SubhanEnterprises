@@ -1,0 +1,54 @@
+<section class="testimonials section text-white">
+  <div class="container">
+    <div class="heading text-center mb-5">
+      <h2 class="fw-bold text-uppercase">
+        What <span class="text-danger">Riders</span> Say
+      </h2>
+
+      <div class="rating-summary d-inline-flex align-items-center gap-3 mt-3">
+        <div class="stars">
+          <i class="fa-solid fa-star" *ngFor="let _ of fullStars(avgRating)"></i>
+          <i class="fa-solid fa-star-half-stroke" *ngIf="halfStar(avgRating)"></i>
+          <i class="fa-regular fa-star" *ngFor="let _ of emptyStars(avgRating)"></i>
+        </div>
+        <div class="score">
+          <span class="fw-semibold">{{ avgRating }}/5</span>
+          <span class="text-muted">from {{ totalReviews }}+ Google reviews</span>
+        </div>
+        <a class="btn btn-sm btn-secondary" href="https://www.google.com/search?q=Subhan+Enterprises+Lahore+Reviews"
+          target="_blank" rel="noopener">
+          <i class="fa-brands fa-google me-2"></i>
+          Read on Google
+        </a>
+
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" *ngFor="let r of reviews">
+        <div class="review-card h-100">
+          <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="review-text">{{ r.text }}</p>
+
+          <div class="stars mb-2">
+            <i class="fa-solid fa-star" *ngFor="let _ of fullStars(r.rating)"></i>
+            <i class="fa-solid fa-star-half-stroke" *ngIf="halfStar(r.rating)"></i>
+            <i class="fa-regular fa-star" *ngFor="let _ of emptyStars(r.rating)"></i>
+          </div>
+
+          <div class="meta d-flex justify-content-between align-items-center">
+            <span class="name fw-semibold">{{ r.name }}</span>
+            <span class="date text-muted">{{ r.date }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a class="btn btn-primary px-4" href="https://www.google.com/search?q=Subhan+Enterprises+Lahore+Reviews"
+        target="_blank" rel="noopener">
+        View All {{ totalReviews }}+ Reviews
+      </a>
+    </div>
+  </div>
+</section>

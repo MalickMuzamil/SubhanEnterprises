@@ -1,0 +1,14 @@
+<section class="performance section text-white text-center">
+  <div class="container">
+    <h2 class="fw-bold text-uppercase mb-5">
+      Ultimate <span class="text-danger">Performance</span>
+    </h2>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" *ngFor="let item of performanceSpecs">
+        <app-main-card [icon]="item.icon" [title]="item.title" [description]="item.text"
+          [progress]="item.progress"></app-main-card>
+      </div>
+    </div>
+  </div>
+</section>

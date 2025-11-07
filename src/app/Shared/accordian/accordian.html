@@ -1,0 +1,22 @@
+<div class="faq-accordion">
+  <div
+    class="accordion-item mb-3"
+    *ngFor="let faq of faqs; let i = index"
+    [class.active]="activeIndex === i"
+  >
+    <button class="accordion-header" (click)="toggle(i)">
+      <div class="d-flex align-items-center justify-content-between w-100">
+        <h5 class="m-0">{{ faq.question }}</h5>
+        <i
+          class="fa-solid"
+          [class.fa-chevron-down]="activeIndex !== i"
+          [class.fa-chevron-up]="activeIndex === i"
+        ></i>
+      </div>
+    </button>
+
+    <div class="accordion-body" [style.maxHeight]="activeIndex === i ? '500px' : '0'">
+      <p>{{ faq.answer }}</p>
+    </div>
+  </div>
+</div>

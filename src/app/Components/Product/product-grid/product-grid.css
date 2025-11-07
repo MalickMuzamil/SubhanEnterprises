@@ -1,0 +1,48 @@
+.products-tabs {
+   background: linear-gradient(
+    to top,
+    var(--dark-color) 0%,
+    var(--secondary-color) 100%
+  );
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+
+  h2 {
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-transform: uppercase;
+    span {
+      color: #e50914;
+    }
+  }
+}
+
+.filters {
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+  height: auto;
+  overflow: visible;
+  z-index: 3;
+}
+
+.products-scroll-area {
+  height: calc(100vh - 100px); 
+  overflow-y: scroll;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.products-scroll-area::-webkit-scrollbar {
+  display: none; 
+}
+
+.row.g-4 {
+  position: relative;
+  z-index: 2;
+}
+
+.col-lg-9 .row {
+  margin-top: 0.5rem;
+}

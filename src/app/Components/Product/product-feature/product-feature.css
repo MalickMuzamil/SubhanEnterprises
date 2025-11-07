@@ -1,0 +1,15 @@
+.product-features {
+  background: radial-gradient(circle at 20% 10%, var(--secondary-color), #000);
+  position: relative;
+  overflow: hidden;
+
+  h2 {
+    font-weight: 800;
+    letter-spacing: 1px;
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+
+}

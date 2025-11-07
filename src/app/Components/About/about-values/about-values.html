@@ -1,0 +1,18 @@
+<section class="values text-center">
+  <div class="container">
+    <h2 class="fw-bold text-uppercase mb-5 text-center">
+      <span class="text-white">Our Core</span>
+      <span class="text-danger"> Values</span>
+    </h2>
+
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let value of values">
+        <app-main-card
+          [icon]="value.icon"
+          [title]="value.title"
+          [description]="value.description">
+        </app-main-card>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,101 @@
+.gallery {
+  position: relative;
+  background:
+    radial-gradient(circle at center top, rgba(229, 9, 20, 0.15), transparent 70%),
+    linear-gradient(to bottom, #0b0b0b, #1a1a1a);
+  padding: 6rem 0;
+  overflow: hidden;
+  z-index: 1;
+
+  --g-gap: clamp(12px, 2vw, 24px);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: 0;
+    width: 100%; height: 80px;
+    background: linear-gradient(to bottom, #000, #0b0b0b);
+    transform: skewY(-3deg);
+    transform-origin: top left;
+    z-index: 0;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    letter-spacing: 1px;
+  }
+
+  .gallery-slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;       
+    margin: 0 auto;
+    padding: 0 var(--g-gap);
+    cursor: pointer;
+  }
+
+  .gallery-track {
+    display: flex;
+    align-items: stretch;
+    gap: var(--g-gap);
+    will-change: transform;
+  }
+
+  .gallery-card {
+    flex: 0 0 calc(33.333% - (var(--g-gap) * 0.0));
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    transform: scale(0.98);
+    transition: transform .4s ease, box-shadow .4s ease;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px rgba(229, 9, 20, 0.4);
+    }
+
+    img {
+      width: 100%;
+      height: clamp(180px, 26vw, 320px); 
+      object-fit: contain;               
+      background: #000;
+      transition: transform 1.2s ease;
+      display: block;
+    }
+
+    &:hover img { transform: scale(1.08); }
+
+    .overlay {
+      position: absolute; left: 0; bottom: 0; width: 100%;
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+      color: #fff; text-align: left; padding: 15px 20px;
+
+      h5 {
+        margin: 0;
+        font-size: clamp(1rem, 1.8vw, 1.3rem);
+        color: var(--light-color);
+      }
+      p  {
+        font-size: clamp(.8rem, 1.5vw, 1rem);
+        color: #ccc; margin-bottom: 0;
+      }
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .gallery-card { flex-basis: calc(25% - (var(--g-gap) * 0.0)); }
+  }
+
+  @media (max-width: 991.98px) {
+    .gallery-card { flex-basis: calc(50% - (var(--g-gap) * 0.0)); }
+  }
+
+  @media (max-width: 575.98px) {
+    .gallery-card { flex: 0 0 86%; }
+    .gallery-slider-wrapper { padding: 0 calc(var(--g-gap) * 0.5); }
+  }
+
+  &::-webkit-scrollbar { display: none; }
+}

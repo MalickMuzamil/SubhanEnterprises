@@ -1,0 +1,69 @@
+.faq-accordion {
+  max-width: 800px;
+  margin: 0 auto;
+
+  .accordion-item {
+    background-color: #111;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+    &:hover {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 15px rgba(229, 9, 20, 0.3);
+    }
+
+    &.active {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 25px rgba(229, 9, 20, 0.4);
+    }
+
+    /* ✅ Accordion Header */
+    .accordion-header {
+      width: 100%;
+      background: transparent;
+      color: var(--light-color);
+      text-align: left;
+      padding: clamp(0.9rem, 2vw, 1.2rem) clamp(1rem, 3vw, 1.5rem);
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+
+      h5 {
+        font-size: clamp(0.85rem, 1.6vw, 1.15rem);
+        font-weight: 600;
+        margin: 0;
+      }
+
+      i {
+        color: var(--primary-color);
+        font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+        transition: transform 0.3s ease;
+      }
+    }
+
+    .accordion-body {
+      background-color: #0b0b0b;
+      padding: 0 clamp(1rem, 3vw, 1.5rem);
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+      p {
+        color: #ccc;
+        font-size: clamp(0.85rem, 1.4vw, 1rem);
+        line-height: 1.6;
+        padding: clamp(0.8rem, 2vw, 1rem) 0;
+        margin: 0;
+      }
+    }
+  }
+}

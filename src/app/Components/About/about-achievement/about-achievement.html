@@ -1,0 +1,18 @@
+<section class="about-achievement text-white text-center">
+  <div class="container">
+    <h2 class="fw-bold text-uppercase mb-5 text-center">
+      <span class="text-white">Our </span>
+      <span class="text-danger">Achievements</span>
+    </h2>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-3 col-12" *ngFor="let achievement of achievements">
+        <app-main-card
+          [icon]="achievement.icon"
+          [title]="achievement.count"
+          [description]="achievement.text">
+        </app-main-card>
+      </div>
+    </div>
+  </div>
+</section>

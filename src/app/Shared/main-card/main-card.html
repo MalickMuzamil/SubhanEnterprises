@@ -1,0 +1,31 @@
+<div class="custom-card p-4 h-100 text-center">
+  
+  <div *ngIf="image" class="card-image mb-3">
+    <img [src]="image" alt="{{ title }}" />
+  </div>
+  
+  <div class="icon mb-3">
+    <i [class]="icon"></i>
+  </div>
+
+  <h5 class="fw-semibold mb-3">{{ title }}</h5>
+
+  <div *ngIf="progress" class="progress mb-3">
+    <div
+      class="progress-bar bg-danger"
+      role="progressbar"
+      [style.width.%]="progress"
+    ></div>
+  </div>
+
+  <p class="mb-0">{{ description }}</p>
+
+  <div *ngIf="price !== undefined" class="mt-2">
+    <h6 class="text-danger fw-bold mb-1">{{ price | currency }}</h6>
+  </div>
+
+  <div class="mt-3" *ngIf="buttonText">
+    <button class="btn btn-danger btn-sm" (click)="onButtonClick()">{{ buttonText }}</button>
+  </div>
+
+</div>

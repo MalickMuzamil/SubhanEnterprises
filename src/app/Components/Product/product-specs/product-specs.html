@@ -1,0 +1,14 @@
+<section class="product-specs text-white py-5">
+  <div class="container">
+    <h2 class="fw-bold text-uppercase text-center mb-5">
+      Technical <span class="text-danger">Specifications</span>
+    </h2>
+
+    <div class="specs-table mx-auto">
+      <div class="spec-item" *ngFor="let spec of specs">
+        <span class="label">{{ spec.label }}</span>
+        <span class="value">{{ spec.value }}</span>
+      </div>
+    </div>
+  </div>
+</section>

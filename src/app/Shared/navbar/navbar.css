@@ -1,0 +1,92 @@
+.navbar {
+  background-color: var(--dark-color) !important;
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease-in-out;
+
+  .navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+    img {
+      height: auto;
+      width: 80px;
+      object-fit: contain;
+      margin-top: -18px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 10px var(--primary-color)) brightness(1.1);
+    }
+
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  .nav-link {
+    color: var(--light-color);
+    font-weight: 600;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: var(--primary-color);
+      transform: translateY(-2px);
+    }
+
+    &.active {
+      color: var(--primary-color) !important;
+    }
+  }
+
+  .form-control {
+    background-color: var(--dark-color);
+    border: 1px solid var(--light-color);
+    color: var(--light-color);
+  }
+
+  .form-control::placeholder {
+    color: var(--light-color);
+  }
+
+  /* ✅ WhatsApp Button */
+  .whatsapp-btn {
+    background-color: #25d366;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+    i {
+      font-size: 1.2rem;
+    }
+
+    &:hover {
+      background-color: #1ebe57;
+      transform: translateY(-2px);
+      box-shadow: 0 0 12px rgba(37, 211, 102, 0.4);
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar-nav {
+      margin-bottom: 1rem;
+    }
+
+    .whatsapp-btn {
+      width: 100%;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+  }
+}

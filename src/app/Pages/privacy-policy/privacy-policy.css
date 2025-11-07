@@ -1,0 +1,122 @@
+.privacy-policy {
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 255, 255, 0.04),
+      transparent 40%
+    ),
+    radial-gradient(circle at 80% 80%, rgba(229, 9, 20, 0.08), transparent 50%),
+    linear-gradient(to bottom, #0b0b0b, #141414);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: clamp(3rem, 6vw, 6rem) 0;
+}
+
+.privacy-policy::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: clamp(400px, 60vw, 900px);
+  height: clamp(400px, 60vw, 900px);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.08),
+    transparent 70%
+  );
+  transform: translate(-50%, -50%);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.privacy-policy h2 {
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  letter-spacing: 1px;
+  position: relative;
+  text-align: center;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.privacy-policy h2::after {
+  content: "";
+  display: block;
+  margin: 1rem auto 0;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #e50914, #ff4d4d);
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
+}
+
+/* 💬 Intro paragraph */
+.privacy-policy .lead {
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  color: #bcbcbc;
+  text-align: center;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.privacy-policy .policy-content {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  text-align: left;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.privacy-policy .policy-content h5 {
+  color: #e50914;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+
+.privacy-policy .policy-content h5::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, #e50914, transparent);
+  border-radius: 2px;
+}
+
+.privacy-policy .policy-content p {
+  color: #ccc;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  line-height: 1.7;
+  margin-top: 0.8rem;
+  padding: clamp(0.8rem, 2vw, 1.2rem);
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 3px solid rgba(229, 9, 20, 0.4);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.privacy-policy .policy-content p:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-left-color: #e50914;
+  transform: translateX(4px);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.privacy-policy .container {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  padding: clamp(1.5rem, 3vw, 2rem);
+  background: rgba(255, 255, 255, 0.01);
+}

@@ -1,0 +1,42 @@
+.about-achievement {
+  position: relative;
+  background: linear-gradient(to bottom, #0b0b0b, #161616);
+  padding: clamp(4rem, 6vw, 6rem) 0;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(
+      circle at center,
+      rgba(229, 9, 20, 0.25),
+      transparent 70%
+    );
+    transform: translate(-50%, -50%);
+    filter: blur(120px);
+    z-index: 0;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 3rem;
+  }
+
+  .col-md-3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  app-main-card {
+    width: 100%;
+    max-width: 260px;
+    z-index: 22;
+  }
+}

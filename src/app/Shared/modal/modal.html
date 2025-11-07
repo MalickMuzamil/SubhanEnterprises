@@ -1,0 +1,19 @@
+<!-- app-general-modal.component.html -->
+<div
+  class="custom-modal-backdrop"
+  *ngIf="isVisible"
+  (click)="closeModal()"
+>
+  <div
+    class="custom-modal-content"
+    (click)="$event.stopPropagation()"
+  >
+    <button class="close-btn" (click)="closeModal()">✖</button>
+
+    <h3 class="modal-title" *ngIf="title">{{ title }}</h3>
+
+    <div class="modal-body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

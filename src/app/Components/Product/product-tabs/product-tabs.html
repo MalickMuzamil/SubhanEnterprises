@@ -1,0 +1,33 @@
+<div class="product-switch mb-4">
+  <button
+    class="switch-btn"
+    [class.active]="activeTab === 'atv'"
+    (click)="selectTab('atv')"
+  >
+    ATV
+  </button>
+
+  <button
+    class="switch-btn"
+    [class.active]="activeTab === 'spare'"
+    (click)="selectTab('spare')"
+  >
+    Spare Parts
+  </button>
+
+  <button
+    class="switch-btn"
+    [class.active]="activeTab === 'accessories'"
+    (click)="selectTab('accessories')"
+  >
+    Accessories
+  </button>
+
+  <button
+    class="switch-btn"
+    [class.active]="activeTab === 'gear'"
+    (click)="selectTab('gear')"
+  >
+    Riding Gear
+  </button>
+</div>

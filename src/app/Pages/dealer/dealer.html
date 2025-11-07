@@ -1,0 +1,19 @@
+<section class="dealer section text-white text-center py-5">
+  <div class="container">
+    <h2 class="fw-bold text-uppercase mb-5">
+      Nationwide <span class="text-danger">ATV Supply</span>
+    </h2>
+
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let item of dealerCards">
+        <app-main-card [icon]="item.icon" [title]="item.title" [description]="item.text"></app-main-card>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-4">
+      <div class="col-md-4" *ngFor="let item of dealerCards">
+        <app-main-card [icon]="item.icon" [title]="item.title" [description]="item.text"></app-main-card>
+      </div>
+    </div>
+  </div>
+</section>

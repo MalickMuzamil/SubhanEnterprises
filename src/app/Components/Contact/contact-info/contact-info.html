@@ -1,0 +1,17 @@
+<section class="contact-info text-center text-white py-5">
+  <div class="container">
+    <h2 class="fw-bold text-uppercase mb-5 text-white">
+      Get in <span class="text-danger">Touch</span>
+    </h2>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4" *ngFor="let contact of contactInfo">
+        <app-main-card
+          [icon]="contact.icon"
+          [title]="contact.title"
+          [description]="contact.text">
+        </app-main-card>
+      </div>
+    </div>
+  </div>
+</section>

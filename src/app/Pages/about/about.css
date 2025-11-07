@@ -1,0 +1,8 @@
+.about-page {
+  background: var(--dark-color);
+  color: var(--light-color);
+  overflow-x: hidden;
+  section {
+    padding: var(--section-padding) 0;
+  }
+}

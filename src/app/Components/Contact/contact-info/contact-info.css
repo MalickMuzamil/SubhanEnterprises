@@ -1,0 +1,41 @@
+
+
+.contact-info {
+  background: linear-gradient(to top, #0a0a0a 0%, #1a1a1a 100%);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 5rem 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(229, 9, 20, 0.12), transparent 70%);
+    transform: translate(-50%, -50%);
+    filter: blur(100px);
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 4vw, 2.3rem);
+    font-weight: 700;
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  .col-md-4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  app-main-card {
+    width: 100%;
+    max-width: 320px; 
+    z-index: 222;
+  }
+}
