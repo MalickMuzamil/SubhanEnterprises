@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://subhan-enterprises.vercel.app/sitemap.xml
+
+Sitemap: https://subhanenterprises.vercel.app/sitemap.xml
