@@ -1,4 +1,4 @@
-<h1 align="center">🏍️ Subhan Enterprises — ATV & Quad Bike Official Website</h1>
+<h1 align="center">🏍️ Subhan Enterprises ATV & Quad Bike Official Website</h1>
 <h3 align="center">Modern Angular Frontend • Fully Responsive • Smooth Animations</h3>
 
 <p align="center">
