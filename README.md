@@ -1,59 +1,124 @@
-# SubhanEnterprises
+<h1 align="center">🏍️ Subhan Enterprises — ATV & Quad Bike Official Website</h1>
+<h3 align="center">Modern Angular Frontend • Fully Responsive • Smooth Animations</h3>
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.3.
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-Angular-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/UI-Bootstrap%20%2B%20Custom-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Responsive-YES-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Animations-AOS%20%2F%20GSAP-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Industry-ATV%20%2F%20Quad%20Bikes-yellow?style=for-the-badge" />
+</p>
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Overview
 
-```bash
-ng serve
-```
+**Subhan Enterprises** is an official **ATV & Quad Bike dealership** website built in **Angular**, featuring a clean, modern and highly responsive UI.  
+It includes smooth **scroll animations**, dynamic product showcasing, and mobile-optimized layouts for a premium browsing experience.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+This project is designed to present **ATV vehicles, accessories, services, and brand identity** in a professional way that matches international dealership standards.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🌟 Key Features
 
-```bash
-ng generate component component-name
-```
+### 🏍️ Product Showcase  
+- High-quality ATV / Quad Bike listings  
+- Image gallery with hover & scroll animations  
+- Product detail pages  
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 📱 Fully Responsive Layout  
+- Mobile-first UI  
+- Optimized for tablets, 4K screens & wide displays  
+- Adaptive grids & flexible sections  
 
-```bash
-ng generate --help
-```
+### 🎞️ Smooth Animations  
+- AOS animations for scroll-in effects  
+- Soft fade, zoom, and slide transitions  
+- Optional GSAP support for advanced motion  
 
-## Building
+### 🎨 Professional UI/UX  
+- Clean, bold dealership-style design  
+- Custom color theme matching Subhan Enterprises branding  
+- Consistent typography & icon usage  
 
-To build the project run:
+### ⚙️ Angular Architecture  
+- Reusable components  
+- Services for product handling  
+- Router-based navigation  
+- Environment-based configuration  
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 📂 Project Structure
 
-## Running unit tests
+src/
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+├── app/
 
-```bash
-ng test
-```
+│ ├── components/
 
-## Running end-to-end tests
+│ ├── pages/
 
-For end-to-end (e2e) testing, run:
+│ ├── services/
 
-```bash
-ng e2e
-```
+│ ├── models/
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+│ └── animations/
 
-## Additional Resources
+├── assets/
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+│ ├── images/
+
+│ ├── products/
+
+│ └── icons/
+
+├── environments/
+
+└── index.html
+
+
+
+---
+
+## 🛠️ Setup & Installation
+
+### 1️⃣ Install Dependencies
+
+npm install
+
+ng serve -o
+
+## 🧩 Animations Used
+✔ AOS (Animate on Scroll)
+
+For fade-in, slide-in & zoom-in effects.
+
+✔ Optional GSAP
+
+For hero section motion & product entrance animations.
+
+## 🖼️ Sections Included
+
+Hero Banner (Animated)
+
+About Subhan Enterprises
+
+ATV & Quad Bike Products
+
+Gallery Section
+
+Services & Maintenance
+
+Contact / Inquiry Form
+
+Footer with Branding
+
+## 📄 License
+
+This project is for Subhan Enterprises (Official ATV/Quad Bike Business) and not for commercial redistribution.
+
+## 👤 Developed By
+
+Muzamil Saleem Frontend Developer (Angular)
