@@ -3,11 +3,13 @@
   padding: 6rem 0;
   position: relative;
   overflow: hidden;
+  text-align: center;
 
   h2 {
     font-size: clamp(1.8rem, 3vw, 2.8rem);
     font-weight: 800;
     letter-spacing: 1px;
+
     span {
       color: var(--primary-color);
     }
@@ -21,32 +23,49 @@
   }
 
   .cta-buttons {
+    position: relative;
+    z-index: 2;
+
     .cta-btn {
       padding: 0.9rem 2.4rem;
       font-weight: 700;
       text-transform: uppercase;
       border-radius: 50px;
       letter-spacing: 1px;
-      transition: all 0.3s ease;
       font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.35s ease;
 
-      /* &.btn-danger {
+      i {
+        font-size: 1.2rem;
+      }
+
+      /* Call button */
+      &.btn-danger {
         background: linear-gradient(90deg, var(--primary-color), #ff3b3b);
-        box-shadow: 0 0 25px rgba(229, 9, 20, 0.4);
+        border: none;
+        box-shadow: 0 0 25px rgba(229, 9, 20, 0.35);
+
         &:hover {
-          transform: scale(1.05);
+          transform: translateY(-3px) scale(1.05);
           box-shadow: 0 0 40px rgba(229, 9, 20, 0.7);
         }
-      } */
+      }
 
-      /* &.btn-outline-light {
+      /* WhatsApp button */
+      &.btn-outline-light {
+        border: 2px solid #25d366;
+        color: #25d366;
+
         &:hover {
-          background: #fff;
+          background: #25d366;
           color: #000;
-          transform: scale(1.05);
-          box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+          transform: translateY(-3px) scale(1.05);
+          box-shadow: 0 0 30px rgba(37, 211, 102, 0.6);
         }
-      } */
+      }
     }
   }
 
