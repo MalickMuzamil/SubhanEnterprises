@@ -5,73 +5,27 @@
     </h2>
 
     <div class="row g-4 justify-content-center">
-      <!-- Product Card 1 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="product-card p-3 h-100">
-          <div class="image mb-3">
-            <img
-              src="assets/Products/Product-1.png"
-              alt="ATV Red"
-              class="img-fluid"
-            />
-          </div>
-          <h5 class="fw-semibold mb-2">ATV X-Rider</h5>
-          <p class="mb-2 text-muted">Power 750 CC | 4×4 Drive</p>
-          <div class="price mb-3 fw-bold text-danger">$ 6 499</div>
-          <button class="btn btn-primary w-100">View Details</button>
-        </div>
-      </div>
-
-      <!-- Product Card 2 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="product-card p-3 h-100">
-          <div class="image mb-3">
-            <img
-              src="assets/Products/Product-4.png"
-              alt="ATV Black"
-              class="img-fluid"
-            />
-          </div>
-          <h5 class="fw-semibold mb-2">ATV Stealth</h5>
-          <p class="mb-2 text-muted">Torque 820 Nm | Off-Road</p>
-          <div class="price mb-3 fw-bold text-danger">$ 7 299</div>
-          <button class="btn btn-primary w-100">View Details</button>
-        </div>
-      </div>
-
-      <!-- Product Card 3 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="product-card p-3 h-100">
-          <div class="image mb-3">
-            <img
-              src="assets/Products/Product-3.png"
-              alt="ATV Yellow"
-              class="img-fluid"
-            />
-          </div>
-          <h5 class="fw-semibold mb-2">ATV Trail Beast</h5>
-          <p class="mb-2 text-muted">Speed 130 km/h | Sport Mode</p>
-          <div class="price mb-3 fw-bold text-danger">$ 7 999</div>
-          <button class="btn btn-primary w-100">View Details</button>
-        </div>
-      </div>
-
-      <!-- Product Card 4 -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="product-card p-3 h-100">
-          <div class="image mb-3">
-            <img
-              src="assets/Products/Product-1.png"
-              alt="ATV Blue"
-              class="img-fluid"
-            />
-          </div>
-          <h5 class="fw-semibold mb-2">ATV Pro Edge</h5>
-          <p class="mb-2 text-muted">Turbo 900 CC | Race Edition</p>
-          <div class="price mb-3 fw-bold text-danger">$ 8 499</div>
-          <button class="btn btn-primary w-100">View Details</button>
-        </div>
+      <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let product of atvProducts">
+        <app-main-card [image]="product.image" [title]="product.title" [description]="product.description"
+          [price]="product.price" [buttonText]="'View Details'" (buttonClick)="openProductModal(product)">
+        </app-main-card>
       </div>
     </div>
   </div>
 </section>
+
+<app-modal [isVisible]="modalVisible" [title]="selectedProduct?.title" (closed)="closeModal()">
+  <div *ngIf="selectedProduct" class="p-3">
+    <div class="row g-3">
+      <div class="col-4">
+        <img [src]="selectedProduct.image" class="img-fluid" alt="{{ selectedProduct.title }}" />
+      </div>
+      <div class="col-8">
+        <h4 class="mb-2">{{ selectedProduct.title }}</h4>
+        <p class="mb-1"><strong>Price:</strong> {{ selectedProduct.price | currency }}</p>
+        <p class="mb-2"><strong>Category:</strong> {{ selectedProduct.category }}</p>
+        <p>{{ selectedProduct.description }}</p>
+      </div>
+    </div>
+  </div>
+</app-modal>

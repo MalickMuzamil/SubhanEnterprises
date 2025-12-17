@@ -9,27 +9,27 @@ import { CommonModule } from '@angular/common';
   styleUrl: './about-achievement.css',
 })
 export class AboutAchievement {
-achievements = [
-  {
-    icon: 'fa-solid fa-motorcycle',
-    count: '1000+',
-    text: 'ATVs Delivered'
-  },
-  {
-    icon: 'fa-solid fa-globe',
-    count: '25+',
-    text: 'Countries Reached'
-  },
-  {
-    icon: 'fa-solid fa-award',
-    count: '15+',
-    text: 'Industry Awards'
-  },
+  achievements = [
     {
-    icon: 'fa-solid fa-users',
-    count: '5000+',
-    text: 'Happy Riders'
-  }
-];
+      icon: 'fa-solid fa-motorcycle',
+      count: '100000+',
+      text: 'ATVs Delivered'
+    },
+    {
+      icon: 'fa-solid fa-map-location-dot',
+      count: 'All Provinces',
+      text: 'Nationwide Delivery Across Pakistan'
+    },
+    {
+      icon: 'fa-solid fa-briefcase',
+      count: '18+',
+      text: 'Years of Industry Experience'
+    },
+    {
+      icon: 'fa-solid fa-users',
+      count: '100000+',
+      text: 'Happy Customers'
+    }
+  ];
 
 }
