@@ -16,12 +16,12 @@ export class Gallery implements AfterViewInit {
   galleryItems = [
     {
       image: 'assets/Products/Product-1.png',
-      title: 'Trail Blazer',
+      title: '70cc Trail Bike in Pakistan',
       desc: 'Experience the raw power of adventure',
     },
     {
       image: 'assets/Products/Product-2.png',
-      title: 'Off-Road King',
+      title: '125cc Trail Bike for Off Road Riding',
       desc: 'Built for rugged terrain and speed',
     },
     {
@@ -31,7 +31,7 @@ export class Gallery implements AfterViewInit {
     },
     {
       image: 'assets/Products/Product-4.png',
-      title: 'Urban Beast',
+      title: 'Kids ATV Quad Bike for Beginners',
       desc: 'Power that rules both road and dirt',
     },
     {
@@ -45,7 +45,7 @@ export class Gallery implements AfterViewInit {
     const track = this.trackRef.nativeElement;
     const wrap = this.wrapRef.nativeElement;
 
-    track.innerHTML += track.innerHTML; 
+    track.innerHTML += track.innerHTML;
 
     const imgs = track.querySelectorAll('img');
     let loaded = 0;
@@ -56,19 +56,19 @@ export class Gallery implements AfterViewInit {
     );
   }
 
-   private startSlider(track: HTMLElement, wrap: HTMLElement) {
+  private startSlider(track: HTMLElement, wrap: HTMLElement) {
     let offset = 0;
 
     // base speed (px per frame) – feel free to tweak
     const BASE_SPEED = 0.9;
     let currentSpeed = BASE_SPEED;
-    let targetSpeed  = BASE_SPEED;
+    let targetSpeed = BASE_SPEED;
 
     // ease factor for smooth speed change
     const EASE = 0.08;
 
     const card = track.children[0] as HTMLElement;
-    const gap  = 24; // same as CSS gap
+    const gap = 24; // same as CSS gap
     const stepWidth = card.clientWidth + gap;
     const halfWidth = track.scrollWidth / 2;
 
@@ -78,7 +78,7 @@ export class Gallery implements AfterViewInit {
     wrap.addEventListener('pointerleave', () => targetSpeed = BASE_SPEED, { passive: true });
 
     wrap.addEventListener('touchstart', () => targetSpeed = slowSpeed, { passive: true });
-    wrap.addEventListener('touchend',   () => targetSpeed = BASE_SPEED, { passive: true });
+    wrap.addEventListener('touchend', () => targetSpeed = BASE_SPEED, { passive: true });
 
     const tick = () => {
       currentSpeed += (targetSpeed - currentSpeed) * EASE;
@@ -86,7 +86,7 @@ export class Gallery implements AfterViewInit {
       offset += currentSpeed;
       if (offset >= stepWidth) {
         track.appendChild(track.firstElementChild!);
-        offset -= stepWidth; 
+        offset -= stepWidth;
       }
 
       if (offset >= halfWidth) offset = 0;

@@ -12,24 +12,23 @@ export class AboutAchievement {
   achievements = [
     {
       icon: 'fa-solid fa-motorcycle',
-      count: '100000+',
-      text: 'ATVs Delivered'
+      count: 'Thousands',
+      text: 'ATV Quad Bikes Supplied Across Pakistan',
     },
     {
       icon: 'fa-solid fa-map-location-dot',
-      count: 'All Provinces',
-      text: 'Nationwide Delivery Across Pakistan'
+      count: 'Nationwide',
+      text: 'Delivery Coverage Across All Major Cities of Pakistan',
     },
     {
       icon: 'fa-solid fa-briefcase',
-      count: '18+',
-      text: 'Years of Industry Experience'
+      count: '18+ Years',
+      text: 'Experience in ATV Quad Bike Industry',
     },
     {
       icon: 'fa-solid fa-users',
-      count: '100000+',
-      text: 'Happy Customers'
-    }
+      count: 'Trusted',
+      text: 'By Dealers & Customers Nationwide',
+    },
   ];
-
 }

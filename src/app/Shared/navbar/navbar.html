@@ -1,62 +1,50 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-  <div class="container">
-    <!-- Left: Logo -->
-    <a class="navbar-brand fw-bold text-uppercase" routerLink="/">
-      <img src="assets/logo.png" alt="ATV Logo">
-    </a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 main-navbar">
+  <div class="container d-flex align-items-center">
 
-    <!-- Toggle Button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <!-- Left: Logo -->
+    <div class="navbar-left d-flex align-items-center">
+      <a class="navbar-brand fw-bold text-uppercase" routerLink="/">
+        <img src="assets/logo.png" alt="ATV Quad Bike Dealer in Pakistan - Subhan Enterprises" />
+      </a>
+    </div>
+
+    <!-- Toggle -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Center + Right -->
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav align-items-center gap-3 mx-auto">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/products" routerLinkActive="active">PRODUCTS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/about" routerLinkActive="active">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/contact" routerLinkActive="active">CONTACT</a>
-        </li>
-      </ul>
+    <div class="collapse navbar-collapse" id="navbarNav">
 
-      <form class="d-flex search-form mt-3 mt-lg-0 ms-lg-3" role="search">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search..."
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-danger" type="submit">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </form>
-      
+      <!-- Center: Nav Links -->
+      <div class="navbar-center flex-grow-1 d-flex justify-content-center">
+        <ul class="navbar-nav align-items-center gap-3">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/products" routerLinkActive="active">PRODUCTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about" routerLinkActive="active">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active">CONTACT</a>
+          </li>
+        </ul>
+      </div>
 
-      <!-- ✅ WhatsApp Button -->
-      <!-- <a
-        href="https://wa.me/923001234567"
-        target="_blank"
-        class="btn btn-success ms-lg-3 mt-3 mt-lg-0 d-flex align-items-center gap-2 whatsapp-btn"
-      >
-        <i class="fa-brands fa-whatsapp fs-5"></i>
-        <span>WhatsApp</span>
-      </a> -->
+      <!-- Right: Trust Info -->
+      <div class="navbar-right d-none d-lg-flex align-items-center">
+        <div class="navbar-info">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Lahore Based</span>
+          <i class="fa-solid fa-truck-fast ms-2"></i>
+          <span>Nationwide Delivery</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </nav>

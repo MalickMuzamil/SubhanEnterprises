@@ -10,64 +10,54 @@ import { Accordian } from '../../Shared/accordian/accordian';
 export class Faq {
   faqData = [
     {
-      question: 'What is the warranty period for your ATVs?',
+      question: 'What warranty do you offer on ATV Quad Bikes?',
       answer:
-        'Our ATVs come with a 6-month limited warranty covering manufacturing defects in the engine, gearbox, and electrical components under normal use.',
+        'Subhan Enterprises provides a limited 10-day checking warranty on ATV Quad Bikes, applicable to engine and gearbox components only. This warranty is for inspection and testing purposes at the time of delivery.',
     },
     {
-      question: 'Do you offer nationwide delivery?',
+      question: 'Where is your main outlet located?',
       answer:
-        'Yes, we deliver ATVs and spare parts all across Pakistan. Our logistics network ensures safe and timely delivery right to your doorstep or dealership.',
+        'Our main outlet and workshop are located in Lahore, where vehicle inspection, mechanical support, and warranty-related checks are carried out.',
     },
     {
-      question: 'Can I buy in bulk for my dealership?',
+      question: 'Do you deliver ATV Quad Bikes all over Pakistan?',
       answer:
-        'Absolutely! As authorized importers, we offer wholesale pricing and bulk availability for dealerships and resellers nationwide.',
+        'Yes, we offer nationwide delivery of ATV Quad Bikes and spare parts across Pakistan. Orders are dispatched securely to ensure safe delivery to your location.',
     },
     {
-      question: 'Do you provide after-sales service?',
+      question: 'Do you sell ATVs in bulk for dealers?',
       answer:
-        'Yes, our technical team provides full after-sales support including maintenance, parts replacement, and mechanical assistance.',
+        'Yes, we supply ATV Quad Bikes in bulk for dealers and resellers across Pakistan. Bulk orders are fulfilled from ready stock with proper documentation and invoicing.',
     },
     {
-      question: 'Are spare parts easily available?',
+      question: 'Do you provide after-sales mechanical support?',
       answer:
-        'Yes, we maintain a consistent stock of genuine spare parts to ensure smooth and reliable maintenance for all ATV models we import.',
+        'Yes, we provide after-sales mechanical support through our designated workshop. Customers are requested to bring their ATV to our workshop for inspection and repair if required.',
     },
     {
-      question: 'Do your ATVs come fully assembled?',
+      question: 'Are spare parts available for your ATVs?',
       answer:
-        'Most of our ATVs are delivered 90% assembled for easy transport. Final assembly and tuning are done by our technicians before delivery or at the dealership.',
+        'We maintain stock of genuine ATV spare parts to support maintenance and mechanical repairs for the models we supply.',
     },
     {
-      question: 'Can I customize my ATV?',
+      question: 'Are ATVs delivered fully assembled?',
       answer:
-        'Yes, customization options such as decals, tire upgrades, lighting kits, and performance tuning are available upon request.',
+        'ATV Quad Bikes are delivered in assembled condition. Each unit is checked before delivery to ensure proper engine and gearbox performance.',
     },
-    // {
-    //   question: 'What payment methods do you accept?',
-    //   answer:
-    //     'We accept bank transfers, cash payments, and verified dealer purchase orders. For bulk orders, partial advance payment options are available.',
-    // },
-    // {
-    //   question: 'Are your ATVs suitable for beginners?',
-    //   answer:
-    //     'Yes, we have models designed for all experience levels — from beginner-friendly 110cc bikes to high-performance 250cc off-road models.',
-    // },
-    // {
-    //   question: 'Do you offer test rides?',
-    //   answer:
-    //     'Yes, customers can book a test ride at our showroom or authorized dealership locations, depending on availability.',
-    // },
-    // {
-    //   question: 'Do you export ATVs outside Pakistan?',
-    //   answer:
-    //     'Currently, we focus on nationwide supply, but we can facilitate export orders on special request with additional documentation.',
-    // },
-    // {
-    //   question: 'Where are you located?',
-    //   answer:
-    //     'Our main showroom and workshop are located in Islamia Park, Lahore. We also serve dealers across Karachi, Islamabad, Faisalabad, and other major cities.',
-    // },
+    {
+      question: 'Can customers request home service or on-site repairs?',
+      answer:
+        'We do not offer home service. For proper diagnosis and repair, customers are requested to bring the ATV to our workshop where tools and spare parts are available.',
+    },
+    {
+      question: 'Do you provide proper invoices and documentation?',
+      answer:
+        'Yes, every ATV Quad Bike sale is completed with a proper purchase invoice and necessary documentation for customer record and warranty reference.',
+    },
+    {
+      question: 'Can I leave feedback or a review after purchase?',
+      answer:
+        'Yes, after successful delivery, customers may share feedback or reviews about their experience. Feedback is optional and helps us improve our services.',
+    },
   ];
 }

@@ -7,7 +7,7 @@
         <div class="gallery-slider-wrapper" #sliderWrap>
             <div class="gallery-track p-4" #galleryTrack> <!-- p-4 remove -->
                 <div class="gallery-card" *ngFor="let item of galleryItems">
-                    <img [src]="item.image" [alt]="item.title" />
+                    <img [src]="item.image" [alt]="item.title + ' by Subhan Enterprises'" />
                     <div class="overlay">
                         <h5>{{ item.title }}</h5>
                         <p>{{ item.desc }}</p>
